@@ -1,0 +1,105 @@
+/* Write your CSS here */
+.main-container {
+  background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  height: 100%;
+  width: 90vw;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.date-input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.add-btn {
+  height: 40px;
+  width: 100px;
+  background-color: #8b5cf6;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.appointment-img {
+  height: 500px;
+  width: 500px;
+}
+
+.display-block-container {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .display-block-container {
+    display: none;
+  }
+}
+
+.appointments-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.starred-btn {
+  height: 40px;
+  width: 140px;
+  background-color: transparent;
+  color: #9796f0;
+  border-color: #8b5cf6;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #8b5cf6;
+  color: #fff;
+}
+
+.inactive {
+  background-color: transparent;
+  color: #8b5cf6;
+}

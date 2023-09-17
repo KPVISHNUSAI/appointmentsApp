@@ -18,21 +18,26 @@ const AppointmentItem = props => {
         <p className="date-sty">Date: {formattedDateAdded}</p>
       </div>
       <div className="star-container">
-        {isStarred === false ? (
-          <img
-            className="star-icon"
-            src="https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png"
-            alt="star"
-            onClick={onClickStar}
-          />
-        ) : (
-          <img
-            alt="star"
-            className="star-icon"
-            src="https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png"
-            onClick={onClickStar}
-          />
-        )}
+        <button
+          data-testid="star"
+          className="star-button"
+          onClick={onClickStar}
+          type="button"
+        >
+          {isStarred === false ? (
+            <img
+              className="star-icon"
+              src="https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png"
+              alt="star"
+            />
+          ) : (
+            <img
+              alt="star"
+              className="star-icon"
+              src="https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png"
+            />
+          )}
+        </button>
       </div>
     </li>
   )

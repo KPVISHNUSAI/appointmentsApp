@@ -52,3 +52,10 @@
   width: 30px;
   cursor: pointer;
 }
+
+.star-button {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 20px;
+  cursor: pointer;    
+}

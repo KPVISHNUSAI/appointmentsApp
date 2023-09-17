@@ -104,7 +104,7 @@ class Appointments extends Component {
               className="form-container"
               onSubmit={this.handleAddAppointment}
             >
-              <h1>Add Appointments</h1>
+              <h1>Add Appointment</h1>
               <label htmlFor="title">Title</label>
               <input
                 type="text"
@@ -142,7 +142,7 @@ class Appointments extends Component {
                 starredFilter === true ? 'active' : 'inactive'
               }`}
               type="button"
-              data-testid="star"
+              //   data-testid="star"
               onClick={this.filterStarredAppointments}
             >
               Starred
